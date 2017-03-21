@@ -17,9 +17,9 @@ public class TankController : NetworkBehaviour {
     Vector3 CameraOffset;
     // Use this for initialization
     void Start () {
-        if (!isLocalPlayer)
+       if (!isLocalPlayer)   // This is to give control only to the local player
         {
-            Destroy(this); //if this is not a local player
+            Destroy(this); //if this is not a local playerdelete this script
             return;
         }
         localRigidbody = GetComponent<Rigidbody>();
@@ -30,23 +30,23 @@ public class TankController : NetworkBehaviour {
 	
 	}
 	
-	// Update is called once per frame
+	// FixedUpdate is called once per fixedframe
 	void FixedUpdate () {
-        float turnamount = CrossPlatformInputManager.GetAxis("Horizontal");
-        float movement = CrossPlatformInputManager.GetAxis("Vertical");
-        Vector3 deltatranformation = transform.position + transform.forward * movementSpeed * movement * Time.deltaTime;
-        localRigidbody.MovePosition(deltatranformation);
+        float turnamount = CrossPlatformInputManager.GetAxis("Horizontal");// get the amount of rotation
+        float movement = CrossPlatformInputManager.GetAxis("Vertical");// get the amount of rotation 
+        Vector3 deltatranformation = transform.position + transform.forward * movementSpeed * movement * Time.deltaTime; // it calculates the amount of movement and creates new object with vector3
+        localRigidbody.MovePosition(deltatranformation); // applies the movement that is in the position to the tank's rigidbody
 
-        Quaternion deltaRotation = Quaternion.Euler(turnSpeed * new Vector3(0f, turnamount, 0f)*Time.deltaTime);
-        localRigidbody.MoveRotation(localRigidbody.rotation * deltaRotation);
+        Quaternion deltaRotation = Quaternion.Euler(turnSpeed * new Vector3(0f, turnamount, 0f)*Time.deltaTime); // calculates the rotation using taking turnamount as argument
+        localRigidbody.MoveRotation(localRigidbody.rotation * deltaRotation); // applies rotation to rigibody
         MoveCamera();
 
 	}
-    void MoveCamera()
+    void MoveCamera() // movecamera along with the tank
     {
-        mainCamera.position = transform.position;
+        mainCamera.position = transform.position; 
         mainCamera.rotation = transform.rotation;
         mainCamera.Translate(CameraOffset);
-        mainCamera.LookAt(transform);
+        mainCamera.LookAt(transform); // camera looks at the transform of the tank
     }
 }

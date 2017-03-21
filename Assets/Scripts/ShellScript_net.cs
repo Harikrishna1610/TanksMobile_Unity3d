@@ -1,22 +1,22 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.Networking;
 public class ShellScript_net : NetworkBehaviour {
     [SerializeField]
     float shellLifeTime = 2f;
     [SerializeField]
-    bool canKill = false;
+    bool canKill = true;
     bool isLive = true;
     float age;
-    public ParticleSystem explosionParticles;  // the shell explosion
+    public ParticleSystem explosionParticles;  // the shell explosion particles
     MeshRenderer shellRenderer;      //shell model renderer
     // Use this for initialization
     void Start () {
         explosionParticles = GetComponentInChildren<ParticleSystem>();
         shellRenderer = GetComponent<MeshRenderer>();
+       
 	}
 	
-	// Update is called once per frame
+	//server callback is used to make the methods to run on the server 
     [ServerCallback]
 	void Update () {
         age += Time.deltaTime;
@@ -49,8 +49,8 @@ public class ShellScript_net : NetworkBehaviour {
         TankHealth health = other.gameObject.GetComponent<TankHealth>();
         if (health != null)
         {
-            health.TakeDamage( 1);
-           // Debug.Log("took damage");
+            health.TakeDamage(1);
+            Debug.Log("took damage");
         }
     }
 }
