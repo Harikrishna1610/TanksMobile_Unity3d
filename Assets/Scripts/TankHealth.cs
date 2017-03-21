@@ -14,17 +14,17 @@ public class TankHealth : NetworkBehaviour
 
     public void TakeDamage(int amount)
     {
-        Debug.Log("Entered take damage:"+health);
+        
         if (!isServer || health <= 0)
         {
-            Debug.Log("this is not server:" + health);
+           
             return; 
         }
         health -= amount;
-        Debug.Log("Hereafter substracting health");
+     
         if (health <= 0)
         {
-            Debug.Log("Health has been reduced to 0");
+            
             health = 0;
             RpcDied();
             Invoke("BackToLobby", 3f);
