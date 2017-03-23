@@ -18,16 +18,16 @@ Platform assembly: C:\Users\Hari\Documents\Tanks_project\game_Data\Managed\Unity
 Loading C:\Users\Hari\Documents\Tanks_project\game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\Hari\Documents\Tanks_project\game_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\Hari\Documents\Tanks_project\game_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.340 seconds
+- Completed reload, in  0.214 seconds
 Platform assembly: C:\Users\Hari\Documents\Tanks_project\game_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Hari\Documents\Tanks_project\game_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 2806x900 at 0,-132
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.511097 ms
+UnloadTime: 0.834626 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 2398 -> priority: 1 
+  Thread -> id: 37a0 -> priority: 1 
 MatchMakingClient ListMatches :https://mm.unet.unity3d.com/json/reply/ListMatchRequest
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
@@ -44,69 +44,25 @@ DontDestroyOnLoad only work for root GameObjects or components on root GameObjec
  
 (Filename:  Line: 386)
 
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 386)
+
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.719170 ms
+UnloadTime: 1.662720 ms
 Setting up 3 worker threads for Enlighten.
-  Thread -> id: 1c54 -> priority: 1 
+  Thread -> id: 4358 -> priority: 1 
+  Thread -> id: 1cc -> priority: 1 
+  Thread -> id: 389c -> priority: 1 
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1654.
-Total: 2.343857 ms (FindLiveObjects: 0.177748 ms CreateObjectMapping: 0.079776 ms MarkObjects: 2.063938 ms  DeleteObjects: 0.021460 ms)
-
-  Thread -> id: 2ff4 -> priority: 1 
-  Thread -> id: 1a9c -> priority: 1 
-Did not find target for sync message for 5
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-Did not find target for sync message for 6
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-Did not find target for sync message for 8
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-Did not find target for sync message for 11
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-Did not find target for sync message for 15
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1742.
+Total: 2.458157 ms (FindLiveObjects: 0.142292 ms CreateObjectMapping: 0.116166 ms MarkObjects: 2.181970 ms  DeleteObjects: 0.017261 ms)
 
 Did not find target for sync message for 16
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
-Did not find target for sync message for 18
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-Did not find target for sync message for 19
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-Did not find target for sync message for 20
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-Did not find target for sync message for 21
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-Did not find target for sync message for 22
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-Did not find target for sync message for 23
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-Did not find target for sync message for 24
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-Did not find target for sync message for 25
+Did not find target for sync message for 17
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
@@ -114,28 +70,20 @@ Did not find target for sync message for 27
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
-Did not find target for sync message for 28
+Log: connection {1} has been disconnected by timeout; address {::ffff:52.29.208.212:9999}
+MatchMakingClient DropConnection :https://mm.unet.unity3d.com/json/reply/DropConnectionRequest
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
-Log: connection {1} has been disconnected by timeout; address {::ffff:52.28.11.218:9999}
 MatchMakingClient DropConnection :https://mm.unet.unity3d.com/json/reply/DropConnectionRequest
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-MatchMakingClient DropConnection :https://mm.unet.unity3d.com/json/reply/DropConnectionRequest
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-UnloadTime: 6.225405 ms
+UnloadTime: 4.942908 ms
 Setting up 1 worker threads for Enlighten.
 
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 806.
-Total: 1.425255 ms (FindLiveObjects: 0.070912 ms CreateObjectMapping: 0.052718 ms MarkObjects: 1.129007 ms  DeleteObjects: 0.172150 ms)
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 786.
+Total: 3.145359 ms (FindLiveObjects: 0.092373 ms CreateObjectMapping: 0.175882 ms MarkObjects: 2.649902 ms  DeleteObjects: 0.226268 ms)
 
-  Thread -> id: 150c -> priority: 1 
-MatchMakingClient ListMatches :https://mm.unet.unity3d.com/json/reply/ListMatchRequest
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
+  Thread -> id: 1780 -> priority: 1 

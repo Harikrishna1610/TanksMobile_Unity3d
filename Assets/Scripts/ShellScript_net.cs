@@ -6,8 +6,9 @@ public class ShellScript_net : NetworkBehaviour {
     [SerializeField]
     bool canKill = true;
     bool isLive = true;
+    [SerializeField]bool isDeathMatch = false;
     float age;
-    public ParticleSystem explosionParticles;  // the shell explosion particles
+    ParticleSystem explosionParticles;  // the shell explosion particles
     MeshRenderer shellRenderer;      //shell model renderer
     // Use this for initialization
     void Start () {
@@ -41,16 +42,22 @@ public class ShellScript_net : NetworkBehaviour {
         {
             return;
         }
-        //if(other.gameObject.tag == "Ground")
-        //        {
-
-        //      }
-        //NetworkServer.Destroy(gameObject);
-        TankHealth health = other.gameObject.GetComponent<TankHealth>();
-        if (health != null)
+        if (isDeathMatch)
         {
-            health.TakeDamage(1);
-            Debug.Log("took damage");
+            TankHealth_DM health = other.gameObject.GetComponent<TankHealth_DM>();
+            if(health!=null)
+            {
+                health.TakeDamage(1);
+            }
+        }
+        else
+        {
+            TankHealth health = other.gameObject.GetComponent<TankHealth>();
+            if (health != null)
+            {
+                health.TakeDamage(1);
+
+            }
         }
     }
 }
